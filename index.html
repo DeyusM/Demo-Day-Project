@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sub Saver</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"defer></script>
+</head>
+<body>
+
+  <h2>Sub Saver</h2>
+
+  <form id = "sub-form">
+    <input type="text" id=sub-name placeholder="Subscription Name">
+    <input type="number" id= cost  placeholder="Cost">
+    <select id="period">
+      <option value="monthly">Monthly</option>
+      <option value="yearly">Yearly</option>
+    </select>
+    <input type="date" id="start-date">
+    <button type="submit">Add Subscription</button>
+    <button type="button" id="add-description">+ Column</button>
+  </form>
+
+  <h3>Your Subscriptions</h3>
+  <table>
+    <thead>
+      <tr> <!-- id="table-header" -->
+        <th>Name</th>
+        <th>Cost</th>
+        <th>Renewal Date</th>
+        <th>Days Left</th>
+      </tr> <!-- class="action-col">Action --> </th>
+    </thead>
+    <tbody id="table-body">
+
+    </tbody>
+  </table>
+
+  <h3 id="total-monthly">Total Monthly Cost: $0.00</h3>
+
+  <h4>Upcoming Charges</h4>
+  <div id="upcoming-list"></div>
+
+  <button id="notifications-btn">Notifications</button>
+></div id="notification-popup" class="hidden"></div>
+
+</body>
+</html>
